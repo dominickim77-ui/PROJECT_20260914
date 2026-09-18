@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서울 인구 데이터 뉴스</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1{color: blue; font-size: 2.5rem;}
+        p{color: pink;}
+        .metric {padding: 1rem;}
+        #result {min-height: 8rem;}
+        button:hover {background: #1d4ed8;}
+        input:focus {outline: 3px solid #93c5fd;}
+    </style>
+</head>
+
+<body>
+    
+    <h1>서울 인구 데이터 뉴스 </h1>
+    <p>나의 첫번째 문장입니다.</p>
+    <article>
+        <figure>
+            <img src="/images/ChatGPT Image Sep 4, 2026, 04_45_41 PM.png" alt="2024년부터 2026년까지 서울 청년 인구가 감소하는 선그래프" width="400">
+            <figcaption>서울 청년 인구 추이. 자료: 국가통계포털</figcaption>
+        </figure>
+    </article>
+    <article>
+        <h1> 청년 인구, 5년 새 8.2% 감소</h1>
+        <p><em>자료: 국가통계포털</em></p>
+        <h2>핵심 발견</h2>
+        <div class="metric">
+           <strong>8.2%</strong>
+           <p>최근 5년간 서울 청년 인구 감소율</p>
+        </div>
+        <ul>
+            <li>20대 인구 감소 폭이 가장 큽니다</li>
+            <li>외곽 지역의 감소율이 높습니다</li>
+        </ul>
+        <a href="http://kosis.kr">원자료 확인</a>
+    </article>
+    <table>
+        <caption>2024~2026년 서울 청년 인구</caption>
+        <thead>
+            <tr>
+                <th scope="col">연도</th>
+            </tr scope="col">증감률</tr>th>
+        </thead>tr></thead>
+        <tbody>
+            <tr>
+                <th scope="row">2024</th>
+                <td>2,410,000명</td>
+                <td>-2.1%</td>
+            </tr>
+            <tr>
+                <th scope="row">2025</th>
+                <td>2,350,000명</td>
+                <td>-2.5%</td>
+            </tr>
+            <tr>
+                <th scope="row">2026</th>
+                <td>2,290,000명</td>
+                <td>-2.6%</td>
+            </tr>
+        </tbody>
+    </table>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7JsNx3i4EM4?si=0HcE1ggE92x9r3p2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <form id="filter-form">
+        <label for="keyword">검색어</label>
+        <input id="keyword" name="keyword" type="search">
+        <div>
+        <div>
+           <label for="region">지역</label>
+        <select id="region" name="region">
+            <option value="all">전체</option>
+            <option value="seoul">서울</option>  
+        </select>
+        </div>
+        </div>
+        
+        <button type="submit">적용</button>
+    </form>
+    <div id="result">
+    검색 결과가 여기에 표시됩니다.
+    </div>
+    <form id="filter-form">
+    ...
+    <button type="submit">적용</button>
+</form>
+
+
+</body>
+
+</html>
