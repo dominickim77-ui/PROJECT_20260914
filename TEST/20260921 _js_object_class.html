@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person = {
+            name: "John",
+            age: 30,
+           greet: function() {
+                console.log("Hello, my name is $ { this.name} and I am $ { this.age} years old.");
+            }
+        };
+
+        console.log(person.name); // John
+        console.log(person["name"]);
+        person.gender = 'male';
+        console.log(person); // male
+        person.gender = 'female';
+        console.log(person); // female
+
+        delete (person.gender); {
+        console.log(person); // male
+        
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+        }       console.log('hello my name is ${this.name} and I am ${this.age} years old.');
+        };
+
+        
+
+
+
+    </script>
+    
+</body>
+</html>
